@@ -1,17 +1,23 @@
-
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { MapPin, Home, TrendingDown, TrendingUp, Star, ExternalLink } from "lucide-react";
 import { PropertyListing } from "@/data/mockListings";
+import { useNavigate } from "react-router-dom";
 
 interface PropertyCardProps {
   listing: PropertyListing;
 }
 
 export const PropertyCard = ({ listing }: PropertyCardProps) => {
+  const navigate = useNavigate();
+
+  const handleViewListing = () => {
+    navigate(`/property/${listing.id}`);
+  };
+
   return (
-    <Card className="hover:shadow-lg transition-shadow duration-300">
+    <Card className="hover:shadow-lg transition-shadow duration-300 cursor-pointer" onClick={handleViewListing}>
       <CardHeader className="pb-2">
         <div className="flex justify-between items-start">
           <div className="flex items-center text-sm text-gray-600 mb-2">
@@ -88,7 +94,10 @@ export const PropertyCard = ({ listing }: PropertyCardProps) => {
       </CardContent>
 
       <CardFooter>
-        <Button className="w-full" size="sm">
+        <Button className="w-full" size="sm" onClick={(e) => {
+          e.stopPropagation();
+          handleViewListing();
+        }}>
           <ExternalLink className="h-4 w-4 mr-2" />
           View Listing
         </Button>

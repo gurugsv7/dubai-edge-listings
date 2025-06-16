@@ -1,4 +1,3 @@
-
 import {
   Table,
   TableBody,
@@ -11,12 +10,19 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { MapPin, TrendingDown, TrendingUp, ExternalLink } from "lucide-react";
 import { PropertyListing } from "@/data/mockListings";
+import { useNavigate } from "react-router-dom";
 
 interface ListingsTableProps {
   listings: PropertyListing[];
 }
 
 export const ListingsTable = ({ listings }: ListingsTableProps) => {
+  const navigate = useNavigate();
+
+  const handleViewListing = (id: string) => {
+    navigate(`/property/${id}`);
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-sm border overflow-hidden">
       <Table>
@@ -34,7 +40,11 @@ export const ListingsTable = ({ listings }: ListingsTableProps) => {
         </TableHeader>
         <TableBody>
           {listings.map((listing) => (
-            <TableRow key={listing.id} className="hover:bg-gray-50">
+            <TableRow 
+              key={listing.id} 
+              className="hover:bg-gray-50 cursor-pointer"
+              onClick={() => handleViewListing(listing.id)}
+            >
               <TableCell>
                 <div>
                   <p className="font-medium">{listing.propertyType}</p>
@@ -101,7 +111,14 @@ export const ListingsTable = ({ listings }: ListingsTableProps) => {
               </TableCell>
               
               <TableCell>
-                <Button size="sm" variant="outline">
+                <Button 
+                  size="sm" 
+                  variant="outline"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleViewListing(listing.id);
+                  }}
+                >
                   <ExternalLink className="h-4 w-4 mr-1" />
                   View
                 </Button>
