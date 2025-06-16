@@ -24,12 +24,19 @@ export const PropertyCard = ({ listing }: PropertyCardProps) => {
             <MapPin className="h-4 w-4 mr-1" />
             {listing.area} • {listing.building}
           </div>
-          {listing.priceDropToday && (
-            <Badge variant="destructive" className="bg-red-500">
-              <TrendingDown className="h-3 w-3 mr-1" />
-              Today
-            </Badge>
-          )}
+          <div className="flex gap-1">
+            {listing.bestOfToday && (
+              <Badge variant="outline" className="border-yellow-400 text-yellow-700 bg-yellow-50">
+                Best of Today
+              </Badge>
+            )}
+            {listing.priceDropToday && (
+              <Badge variant="destructive" className="bg-red-500">
+                <TrendingDown className="h-3 w-3 mr-1" />
+                Today
+              </Badge>
+            )}
+          </div>
         </div>
         
         <div className="flex items-center justify-between">

@@ -1,4 +1,3 @@
-
 import { useParams, useNavigate } from "react-router-dom";
 import { mockListings, PropertyListing } from "@/data/mockListings";
 import { Header } from "@/components/Header";
@@ -269,22 +268,35 @@ const PropertyDetails = () => {
               </CardContent>
             </Card>
 
-            {/* Action Buttons */}
-            <Card>
-              <CardContent className="pt-6">
-                <div className="space-y-3">
-                  <Button className="w-full" size="lg">
-                    Contact Agent
-                  </Button>
-                  <Button variant="outline" className="w-full">
-                    Schedule Viewing
-                  </Button>
-                  <Button variant="outline" className="w-full">
-                    Download Details
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            {/* View on Bayut */}
+            {listing.externalUrl && (
+              <Card>
+                <CardContent>
+                  <a
+                    href={listing.externalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <Button
+                      className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center"
+                      size="lg"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5 mr-2"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path d="M14.828 9.172a4 4 0 010 5.656M9.172 14.828a4 4 0 010-5.656M12 20v-2m0-12V4m8 8h-2m-12 0H4m15.364-3.364l-1.414 1.414M6.05 17.95l-1.414-1.414M17.95 17.95l-1.414-1.414M6.05 6.05L4.636 7.464" />
+                      </svg>
+                      View on Bayut
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+            )}
           </div>
         </div>
       </div>
