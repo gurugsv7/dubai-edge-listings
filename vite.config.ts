@@ -9,6 +9,11 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    fs: {
+      strict: false,
+    },
+    // Add this middleware for SPA fallback
+    middlewareMode: false,
   },
   plugins: [
     react(),
@@ -20,4 +25,16 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // Add this for static hosting SPA fallback
+  build: {
+    rollupOptions: {
+      output: {
+        // ...existing code...
+      }
+    }
+  },
+  // Vite 4+ supports this option for SPA fallback
+  preview: {
+    // You can add other preview options here if needed
+  }
 }));
