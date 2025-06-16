@@ -44,22 +44,31 @@ const Index = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <Header />
       <HeroSection />
-      <div className="container mx-auto px-4 pb-8">
-        <FilterBar filters={filters} onFiltersChange={setFilters} />
-        <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-bold text-gray-800">
-            {filteredListings.length} Properties Found
-          </h2>
+      <div className="container mx-auto px-4 pb-12">
+        <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 mb-8">
+          <FilterBar filters={filters} onFiltersChange={setFilters} />
+        </div>
+        
+        <div className="flex justify-between items-center mb-8">
+          <div>
+            <h2 className="text-3xl font-bold text-slate-900 mb-2">
+              {filteredListings.length} Properties Found
+            </h2>
+            <p className="text-slate-600">Premium investment opportunities curated for you</p>
+          </div>
           <ViewToggle viewMode={viewMode} onViewModeChange={setViewMode} />
         </div>
-        {viewMode === "grid" ? (
-          <ListingsGrid listings={filteredListings} />
-        ) : (
-          <ListingsTable listings={filteredListings} />
-        )}
+        
+        <div className="transition-all duration-300">
+          {viewMode === "grid" ? (
+            <ListingsGrid listings={filteredListings} />
+          ) : (
+            <ListingsTable listings={filteredListings} />
+          )}
+        </div>
       </div>
     </div>
   );
