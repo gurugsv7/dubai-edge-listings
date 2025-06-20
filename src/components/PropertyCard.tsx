@@ -2,12 +2,7 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { MapPin, Home, TrendingDown, TrendingUp, Star, ExternalLink } from "lucide-react";
-// If PropertyListing is the default export:
 import { PropertyListing } from "@/data/mockListings";
-
-// Or, if PropertyListing is not exported at all, import the correct type or interface that matches your listing prop.
-// For example, if the export is named differently, update the import accordingly:
-// import { CorrectTypeName } from "@/data/mockListings";
 import { useNavigate } from "react-router-dom";
 
 interface PropertyCardProps {
