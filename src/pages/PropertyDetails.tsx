@@ -4,7 +4,7 @@ import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, MapPin, Home, TrendingDown, TrendingUp, Star, Calendar, Calculator, Building, Users } from "lucide-react";
+import { ArrowLeft, MapPin, Home, TrendingDown, Star, Calendar, Calculator, Building, Users } from "lucide-react";
 
 const PropertyDetails = () => {
   const { id } = useParams();
@@ -29,10 +29,16 @@ const PropertyDetails = () => {
     );
   }
 
-  const monthlyRent = Math.round((listing.currentPrice * listing.roiPercentage) / 100 / 12);
-  const sqftPrice = Math.round(listing.currentPrice / (listing.bedrooms === 1 ? 600 : listing.bedrooms * 800));
-  const marketAverage = Math.round(listing.currentPrice * 1.15);
-  const savings = marketAverage - listing.currentPrice;
+  // Calculate market value from top 3 prices
+  let marketValue = undefined;
+  let marketDiff = undefined;
+  if (listing.top3Prices && listing.top3Prices.length > 0) {
+    const avg =
+      listing.top3Prices.reduce((sum, item) => sum + item.price, 0) /
+      listing.top3Prices.length;
+    marketValue = Math.round(avg);
+    marketDiff = listing.currentPrice - marketValue;
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -71,94 +77,26 @@ const PropertyDetails = () => {
               <CardHeader>
                 <CardTitle className="flex items-center text-gray-800">
                   <Calculator className="h-5 w-5 mr-2 text-gray-600" />
-                  Price Analysis & Market Position
+                  Price Analysis & Market Value
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-4">
-                    <div>
-                      <p className="text-sm text-gray-600">Current Price</p>
-                      <p className="text-3xl font-bold text-gray-900">
-                        {listing.currentPrice.toLocaleString()} AED
-                      </p>
-                      <p className="text-sm text-gray-500">
-                        {sqftPrice.toLocaleString()} AED/sqft (est.)
-                      </p>
-                    </div>
-                    
-                    {listing.priceDropAmount && (
-                      <div className="bg-gray-100 border border-gray-200 p-4 rounded-lg">
-                        <p className="text-sm text-gray-700 font-medium">Today's Price Drop</p>
-                        <p className="text-xl font-bold text-gray-900 flex items-center">
-                          <TrendingDown className="h-5 w-5 mr-1 text-gray-600" />
-                          -{listing.priceDropPercentage}%
-                        </p>
-                        <p className="text-sm text-gray-600">
-                          Save {listing.priceDropAmount.toLocaleString()} AED
-                        </p>
-                      </div>
-                    )}
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-sm text-gray-600">Current Price</p>
+                    <p className="text-3xl font-bold text-blue-700">
+                      AED {listing.currentPrice.toLocaleString()}
+                    </p>
                   </div>
-                  
-                  <div className="space-y-4">
-                    <div className="bg-gray-100 border border-gray-200 p-4 rounded-lg">
-                      <p className="text-sm text-gray-700 font-medium">vs Market Average</p>
+                  {marketValue && (
+                    <div className="bg-gray-100 border border-gray-200 p-4 rounded-lg mt-2">
+                      <p className="text-sm text-gray-700 font-medium">Market Value (Avg. of Top 3)</p>
                       <p className="text-xl font-bold text-gray-900">
-                        -{Math.round((savings / marketAverage) * 100)}% Below
+                        AED {marketValue.toLocaleString()}
                       </p>
-                      <p className="text-sm text-gray-600">
-                        Save {savings.toLocaleString()} AED vs avg market price
-                      </p>
+                      <p className={`text-sm font-semibold mt-1 ${marketDiff < 0 ? 'text-green-600' : 'text-red-600'}`}>{marketDiff < 0 ? `Below market by AED ${Math.abs(marketDiff).toLocaleString()}` : `Above market by AED ${marketDiff.toLocaleString()}`}</p>
                     </div>
-                    
-                    <div className="bg-gray-100 border border-gray-200 p-4 rounded-lg">
-                      <p className="text-sm text-gray-700 font-medium">Expected Monthly Rent</p>
-                      <p className="text-xl font-bold text-gray-900">
-                        {monthlyRent.toLocaleString()} AED/month
-                      </p>
-                      <p className="text-sm text-gray-600">
-                        Based on {listing.roiPercentage}% annual ROI
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* ROI Analysis */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center text-gray-800">
-                  <TrendingUp className="h-5 w-5 mr-2 text-gray-600" />
-                  Investment ROI Analysis
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="text-center p-4 bg-gray-100 border border-gray-200 rounded-lg">
-                    <p className="text-3xl font-bold text-gray-900">{listing.roiPercentage}%</p>
-                    <p className="text-sm text-gray-700">Annual ROI</p>
-                    <p className="text-xs text-gray-500 mt-1">
-                      {listing.roiPercentage > 8 ? "Above average" : "Market rate"}
-                    </p>
-                  </div>
-                  
-                  <div className="text-center p-4 bg-gray-100 border border-gray-200 rounded-lg">
-                    <p className="text-3xl font-bold text-gray-900">
-                      {(listing.currentPrice * listing.roiPercentage / 100).toLocaleString()}
-                    </p>
-                    <p className="text-sm text-gray-700">Annual Income</p>
-                    <p className="text-xs text-gray-500 mt-1">AED per year</p>
-                  </div>
-                  
-                  <div className="text-center p-4 bg-gray-100 border border-gray-200 rounded-lg">
-                    <p className="text-3xl font-bold text-gray-900">
-                      {Math.round(100 / listing.roiPercentage)}
-                    </p>
-                    <p className="text-sm text-gray-700">Payback Period</p>
-                    <p className="text-xs text-gray-500 mt-1">Years to break even</p>
-                  </div>
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -212,6 +150,36 @@ const PropertyDetails = () => {
 
           {/* Sidebar */}
           <div className="space-y-6">
+            {/* Top 3 Prices Section */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center text-gray-800">
+                  <span className="mr-2">🏆</span> Top 3 Lowest Prices in this Building
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  {listing.top3Prices && listing.top3Prices.length > 0 ? (
+                    listing.top3Prices.map((item, idx) => (
+                      <div key={idx} className="flex items-center justify-between bg-gray-50 border rounded px-3 py-2">
+                        <span className="font-semibold text-blue-700">AED {item.price.toLocaleString()}</span>
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          className="ml-2"
+                          onClick={() => window.open(item.link, '_blank')}
+                        >
+                          View
+                        </Button>
+                      </div>
+                    ))
+                  ) : (
+                    <span className="text-gray-500">No comparison data</span>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Opportunity Reason */}
             <Card>
               <CardHeader>
@@ -267,36 +235,6 @@ const PropertyDetails = () => {
                 )}
               </CardContent>
             </Card>
-
-            {/* View on Bayut */}
-            {listing.externalUrl && (
-              <Card>
-                <CardContent>
-                  <a
-                    href={listing.externalUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    <Button
-                      className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center"
-                      size="lg"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 mr-2"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path d="M14.828 9.172a4 4 0 010 5.656M9.172 14.828a4 4 0 010-5.656M12 20v-2m0-12V4m8 8h-2m-12 0H4m15.364-3.364l-1.414 1.414M6.05 17.95l-1.414-1.414M17.95 17.95l-1.414-1.414M6.05 6.05L4.636 7.464" />
-                      </svg>
-                      View on Bayut
-                    </Button>
-                  </a>
-                </CardContent>
-              </Card>
-            )}
           </div>
         </div>
       </div>

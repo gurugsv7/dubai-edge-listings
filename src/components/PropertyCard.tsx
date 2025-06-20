@@ -2,7 +2,12 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { MapPin, Home, TrendingDown, TrendingUp, Star, ExternalLink } from "lucide-react";
+// If PropertyListing is the default export:
 import { PropertyListing } from "@/data/mockListings";
+
+// Or, if PropertyListing is not exported at all, import the correct type or interface that matches your listing prop.
+// For example, if the export is named differently, update the import accordingly:
+// import { CorrectTypeName } from "@/data/mockListings";
 import { useNavigate } from "react-router-dom";
 
 interface PropertyCardProps {
@@ -25,11 +30,6 @@ export const PropertyCard = ({ listing }: PropertyCardProps) => {
             {listing.area} • {listing.building}
           </div>
           <div className="flex gap-1">
-            {listing.bestOfToday && (
-              <Badge variant="outline" className="border-yellow-400 text-yellow-700 bg-yellow-50">
-                Best of Today
-              </Badge>
-            )}
             {listing.priceDropToday && (
               <Badge variant="destructive" className="bg-red-500">
                 <TrendingDown className="h-3 w-3 mr-1" />

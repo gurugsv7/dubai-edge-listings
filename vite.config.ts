@@ -5,15 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/dubai-edge-listings/",
   server: {
     host: "::",
     port: 8080,
-    fs: {
-      strict: false,
-    },
-    // Add this middleware for SPA fallback
-    middlewareMode: false,
   },
   plugins: [
     react(),
@@ -25,16 +19,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // Add this for static hosting SPA fallback
-  build: {
-    rollupOptions: {
-      output: {
-        // ...existing code...
-      }
-    }
-  },
-  // Vite 4+ supports this option for SPA fallback
-  preview: {
-    // You can add other preview options here if needed
-  }
 }));
