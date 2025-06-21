@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
@@ -11,36 +10,34 @@ import { mockListings } from "@/data/mockListings";
 export type ViewMode = "grid" | "table";
 
 export interface Filters {
-  priceDropToday: boolean;
-  highRentalYield: boolean;
-  offPlanProjects: boolean;
-  motivatedSellers: boolean;
-  paymentPlanAvailable: boolean;
-  area: string;
-  propertyType: string;
+  studioApartments: boolean;
+  bedroomType: string;
 }
 
 const Index = () => {
   const [viewMode, setViewMode] = useState<ViewMode>("grid");
   const [filters, setFilters] = useState<Filters>({
-    priceDropToday: false,
-    highRentalYield: false,
-    offPlanProjects: false,
-    motivatedSellers: false,
-    paymentPlanAvailable: false,
-    area: "",
-    propertyType: "",
+    studioApartments: false,
+    bedroomType: "all",
   });
 
   const filteredListings = mockListings.filter((listing) => {
-    if (filters.priceDropToday && !listing.priceDropToday) return false;
-    if (filters.highRentalYield && listing.roiPercentage < 8) return false;
-    if (filters.offPlanProjects && !listing.isOffPlan) return false;
-    if (filters.motivatedSellers && !listing.isMotivatedSeller) return false;
-    if (filters.paymentPlanAvailable && !listing.hasPaymentPlan) return false;
-    if (filters.area && !listing.area.toLowerCase().includes(filters.area.toLowerCase())) return false;
-    if (filters.propertyType && listing.propertyType !== filters.propertyType) return false;
+    if (filters.studioApartments && (listing.bedrooms !== 0 && listing.propertyType !== "Studio")) return false;
+    if (filters.bedroomType && filters.bedroomType !== "all" && String(listing.bedrooms) !== filters.bedroomType) return false;
     return true;
+  });
+
+  // Sort listings by today's price as cheapest, then today's price in top 3, then others
+  const sortedListings = [...filteredListings].sort((a, b) => {
+    const getSortRank = (listing) => {
+      if (!listing.top3Prices || listing.top3Prices.length === 0) return 2;
+      const todayIdx = listing.top3Prices.findIndex(p => p.is_today_listing);
+      if (todayIdx === -1) return 2;
+      const minPrice = Math.min(...listing.top3Prices.map(p => p.price));
+      if (listing.top3Prices[todayIdx].price === minPrice) return 0;
+      return 1;
+    };
+    return getSortRank(a) - getSortRank(b);
   });
 
   return (
@@ -51,14 +48,14 @@ const Index = () => {
         <FilterBar filters={filters} onFiltersChange={setFilters} />
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-gray-800">
-            {filteredListings.length} Properties Found
+            {sortedListings.length} Properties Found
           </h2>
           <ViewToggle viewMode={viewMode} onViewModeChange={setViewMode} />
         </div>
         {viewMode === "grid" ? (
-          <ListingsGrid listings={filteredListings} />
+          <ListingsGrid listings={sortedListings} />
         ) : (
-          <ListingsTable listings={filteredListings} />
+          <ListingsTable listings={sortedListings} />
         )}
       </div>
     </div>

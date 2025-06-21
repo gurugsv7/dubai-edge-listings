@@ -1,7 +1,7 @@
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { MapPin, Home, TrendingDown, TrendingUp, Star, ExternalLink } from "lucide-react";
+import { MapPin, Home, TrendingDown, Star, ExternalLink } from "lucide-react";
 import { PropertyListing } from "@/data/mockListings";
 import { useNavigate } from "react-router-dom";
 
@@ -55,14 +55,6 @@ export const PropertyCard = ({ listing }: PropertyCardProps) => {
                 -{listing.priceDropPercentage}% ({listing.priceDropAmount.toLocaleString()} AED)
               </p>
             )}
-          </div>
-          
-          <div className="text-right">
-            <p className="text-lg font-semibold text-green-600 flex items-center">
-              <TrendingUp className="h-4 w-4 mr-1" />
-              {listing.roiPercentage}%
-            </p>
-            <p className="text-xs text-gray-500">ROI</p>
           </div>
         </div>
 

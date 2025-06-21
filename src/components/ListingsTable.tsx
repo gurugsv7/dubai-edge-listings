@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { MapPin, TrendingDown, TrendingUp, ExternalLink } from "lucide-react";
+import { MapPin, ExternalLink } from "lucide-react";
 import { PropertyListing } from "@/data/mockListings";
 import { useNavigate } from "react-router-dom";
 
@@ -32,7 +32,6 @@ export const ListingsTable = ({ listings }: ListingsTableProps) => {
             <TableHead>Location</TableHead>
             <TableHead>Price</TableHead>
             <TableHead>Price Drop</TableHead>
-            <TableHead>ROI %</TableHead>
             <TableHead>Features</TableHead>
             <TableHead>Opportunity</TableHead>
             <TableHead>Action</TableHead>
@@ -80,13 +79,6 @@ export const ListingsTable = ({ listings }: ListingsTableProps) => {
                 ) : (
                   <span className="text-gray-400">-</span>
                 )}
-              </TableCell>
-              
-              <TableCell>
-                <div className="flex items-center text-green-600">
-                  <TrendingUp className="h-4 w-4 mr-1" />
-                  <span className="font-bold">{listing.roiPercentage}%</span>
-                </div>
               </TableCell>
               
               <TableCell>
