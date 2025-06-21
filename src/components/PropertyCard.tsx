@@ -79,12 +79,6 @@ export const PropertyCard = ({ listing }: PropertyCardProps) => {
             </p>
           </div>
         </div>
-
-        <div className="flex flex-wrap gap-2">
-          {listing.isOffPlan && <Badge variant="secondary">Off-Plan</Badge>}
-          {listing.hasPaymentPlan && <Badge variant="secondary">Payment Plan</Badge>}
-          {listing.isMotivatedSeller && <Badge variant="secondary">Motivated Seller</Badge>}
-        </div>
       </CardContent>
 
       <CardFooter>
