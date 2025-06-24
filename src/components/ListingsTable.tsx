@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { MapPin, ExternalLink } from "lucide-react";
+import { MapPin, ExternalLink, TrendingDown } from "lucide-react";
 import { PropertyListing } from "@/data/mockListings";
 import { useNavigate } from "react-router-dom";
 

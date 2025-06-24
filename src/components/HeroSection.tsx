@@ -1,4 +1,3 @@
-
 import { TrendingUp, Clock, Target, ArrowRight, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -45,7 +44,7 @@ export const HeroSection = () => {
           </div>
           
           {/* Feature cards */}
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="hidden sm:grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 hover:scale-105">
               <div className="bg-gradient-to-br from-green-400 to-emerald-500 rounded-xl p-3 w-fit mx-auto mb-4">
                 <TrendingUp className="h-8 w-8 text-white" />
@@ -84,3 +83,4 @@ export const HeroSection = () => {
     </section>
   );
 };
+
