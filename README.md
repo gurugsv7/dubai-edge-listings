@@ -4,6 +4,8 @@
 
 **URL**: https://lovable.dev/projects/dbd83791-e8ef-440d-b999-fa83387f50ef
 
+**Production URL**: https://www.lykaconnect.com
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
