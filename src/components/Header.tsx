@@ -25,7 +25,7 @@ export const Header = () => {
                 Last Updated
               </p>
               <p className="text-[10px] text-gray-600 md:text-xs">
-                Today, 6:00 AM
+                Today, 4:30 PM IST / 3:00 PM Dubai
               </p>
             </div>
             {/* Only show Alerts button on md+ */}
