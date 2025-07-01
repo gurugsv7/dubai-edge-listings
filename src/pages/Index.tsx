@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { mockListings } from "@/data/mockListings";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -45,6 +45,15 @@ const Index = () => {
     ...filteredListings.filter(isTodaysBest),
     ...filteredListings.filter((l) => !isTodaysBest(l)),
   ];
+
+  // Restore scroll position if returning from details
+  useEffect(() => {
+    const savedScroll = sessionStorage.getItem("homeScrollY");
+    if (savedScroll) {
+      window.scrollTo(0, parseInt(savedScroll, 10));
+      sessionStorage.removeItem("homeScrollY");
+    }
+  }, []);
 
   return (
     <div>
@@ -116,7 +125,10 @@ const Index = () => {
               <div className="flex gap-2 mt-2">
                 <Button
                   size="sm"
-                  onClick={() => navigate(`/property/${mockListings.indexOf(listing)}`)}
+                  onClick={() => {
+                    sessionStorage.setItem("homeScrollY", window.scrollY.toString());
+                    navigate(`/property/${mockListings.indexOf(listing)}`);
+                  }}
                 >
                   View Details
                 </Button>
