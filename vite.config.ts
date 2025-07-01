@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: '/',
+  base: '/dubai-edge-listings/',
   plugins: [
     react(),
     mode === 'development' &&

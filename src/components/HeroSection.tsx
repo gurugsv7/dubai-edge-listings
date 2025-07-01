@@ -12,9 +12,7 @@ export const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-blue-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-4 py-2 mb-6">
             <Zap className="h-4 w-4 text-yellow-400" />
-            <span className="text-sm font-medium text-blue-100">
-              Updated Daily at 4:30 PM IST / 3:00 PM Dubai
-            </span>
+            <span className="text-sm font-medium text-blue-100">Updated Daily at 6:00 AM GST</span>
           </div>
 
           {/* Main heading */}

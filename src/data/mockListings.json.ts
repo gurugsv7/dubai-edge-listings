@@ -18,7 +18,7 @@ export interface PropertyListing {
   originalTitle?: string;
   bayutLink?: string;
   buildingUrl?: string;
-  top3Prices?: Array<{ price: number; link: string; is_today_listing: boolean }>;
+  topPrice?: { price: number; link: string; is_today_listing: boolean };
 }
 
 export const mockListings: PropertyListing[] = [
@@ -41,11 +41,7 @@ export const mockListings: PropertyListing[] = [
     originalTitle: "📆 Handover Next Year | 🌇 Premium View | 🏠 Smart Home System | 💰 High ROI | ✨ Luxury Living | Bayut.com",
     bayutLink: "https://www.bayut.com/property/details-11976323.html",
     buildingUrl: "https://www.bayut.com/for-sale/apartments/dubai/dubai-sports-city/binghatti-haven/",
-    top3Prices: [
-      { price: 685000, link: "https://www.bayut.com/property/details-11157678.html", is_today_listing: false },
-      { price: 699000, link: "https://www.bayut.com/property/details-11974284.html", is_today_listing: false },
-      { price: 714399, link: "https://www.bayut.com/property/details-11278466.html", is_today_listing: false }
-    ]
+    topPrice: { price: 685000, link: "https://www.bayut.com/property/details-11157678.html", is_today_listing: false }
   },
   {
     id: "2",
@@ -66,11 +62,7 @@ export const mockListings: PropertyListing[] = [
     originalTitle: "WORLD-CLASS LIFESTYLE FEATURES | SECURE COMPLEX | LUXURY AMENITIES | Bayut.com",
     bayutLink: "https://www.bayut.com/property/details-11984385.html",
     buildingUrl: "https://www.bayut.com/for-sale/apartments/dubai/dubai-internet-city/iconic-residence/",
-    top3Prices: [
-      { price: 3445095, link: "https://www.bayut.com/property/details-11941776.html", is_today_listing: false },
-      { price: 3499999, link: "https://www.bayut.com/property/details-11805773.html", is_today_listing: false },
-      { price: 3499999, link: "https://www.bayut.com/property/details-11915320.html", is_today_listing: false }
-    ]
+    topPrice: { price: 3445095, link: "https://www.bayut.com/property/details-11941776.html", is_today_listing: false }
   },
   {
     id: "3",
@@ -91,11 +83,7 @@ export const mockListings: PropertyListing[] = [
     originalTitle: '"Your 4-Bed Oasis in Dubai Land – Fully Owned with 100% Today- Pay Less Now, Own More Later | Bayut.com',
     bayutLink: "https://www.bayut.com/property/details-11984380.html",
     buildingUrl: "https://www.bayut.com/for-sale/townhouses/dubai/dubailand/reportage-village/",
-    top3Prices: [
-      { price: 1257620, link: "https://www.bayut.com/property/details-11971141.html", is_today_listing: false },
-      { price: 1257620, link: "https://www.bayut.com/property/details-11970696.html", is_today_listing: false },
-      { price: 1257620, link: "https://www.bayut.com/property/details-11973581.html", is_today_listing: false }
-    ]
+    topPrice: { price: 1257620, link: "https://www.bayut.com/property/details-11971141.html", is_today_listing: false }
   },
   {
     id: "4",
@@ -116,11 +104,7 @@ export const mockListings: PropertyListing[] = [
     originalTitle: "Spacious 4-Bedroom Duplex for Sale | Plaza Boutique 16, Business Bay | Bayut.com",
     bayutLink: "https://www.bayut.com/property/details-11984363.html",
     buildingUrl: "https://www.bayut.com/for-sale/villas/dubai/business-bay/the-executive-towers/plaza-boutique/",
-    top3Prices: [
-      { price: 2800000, link: "https://www.bayut.com/property/details-11490485.html", is_today_listing: false },
-      { price: 2937076, link: "https://www.bayut.com/property/details-11754203.html", is_today_listing: false },
-      { price: 3000000, link: "https://www.bayut.com/property/details-11717997.html", is_today_listing: false }
-    ]
+    topPrice: { price: 2800000, link: "https://www.bayut.com/property/details-11490485.html", is_today_listing: false }
   },
   {
     id: "5",
@@ -141,11 +125,7 @@ export const mockListings: PropertyListing[] = [
     originalTitle: "Pool View and Halfa Park Views | Duplex 3BR-Type A | Bayut.com",
     bayutLink: "https://www.bayut.com/property/details-11984353.html",
     buildingUrl: "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/norah-residence/",
-    top3Prices: [
-      { price: 645000, link: "https://www.bayut.com/property/details-11984103.html", is_today_listing: false },
-      { price: 645000, link: "https://www.bayut.com/property/details-11950024.html", is_today_listing: false },
-      { price: 985000, link: "https://www.bayut.com/property/details-11950021.html", is_today_listing: false }
-    ]
+    topPrice: { price: 645000, link: "https://www.bayut.com/property/details-11984103.html", is_today_listing: false }
   },
   {
     id: "6",
@@ -166,11 +146,7 @@ export const mockListings: PropertyListing[] = [
     originalTitle: "After Discount 1.88 M Only | Just Steps From Metro Station | 3 Bed + Closed Kitchen All Rooms En-Suit | Very Good Discount Offer | Bayut.com",
     bayutLink: "https://www.bayut.com/property/details-11984345.html",
     buildingUrl: "https://www.bayut.com/for-sale/apartments/dubai/al-furjan/sunbliss-residences/",
-    top3Prices: [
-      { price: 1299000, link: "https://www.bayut.com/property/details-11944147.html", is_today_listing: false },
-      { price: 1342300, link: "https://www.bayut.com/property/details-11881542.html", is_today_listing: false },
-      { price: 1799000, link: "https://www.bayut.com/property/details-11944218.html", is_today_listing: false }
-    ]
+    topPrice: { price: 1299000, link: "https://www.bayut.com/property/details-11944147.html", is_today_listing: false }
   },
   {
     id: "7",
@@ -191,11 +167,7 @@ export const mockListings: PropertyListing[] = [
     originalTitle: "Vacant | Fully Furnished | Maids room | High floor | Bayut.com",
     bayutLink: "https://www.bayut.com/property/details-11984339.html",
     buildingUrl: "https://www.bayut.com/for-sale/apartments/dubai/dubai-marina/damac-heights/",
-    top3Prices: [
-      { price: 1850000, link: "https://www.bayut.com/property/details-11968712.html", is_today_listing: false },
-      { price: 2049000, link: "https://www.bayut.com/property/details-11897459.html", is_today_listing: false },
-      { price: 2100000, link: "https://www.bayut.com/property/details-11933055.html", is_today_listing: false }
-    ]
+    topPrice: { price: 1850000, link: "https://www.bayut.com/property/details-11968712.html", is_today_listing: false }
   },
   {
     id: "8",
@@ -216,11 +188,7 @@ export const mockListings: PropertyListing[] = [
     originalTitle: "Your Future Home Awaits – Just 30% to Book-70% on handover-Move Closer to Homeownership | Bayut.com",
     bayutLink: "https://www.bayut.com/property/details-11984337.html",
     buildingUrl: "https://www.bayut.com/for-sale/townhouses/dubai/dubailand/reportage-village/",
-    top3Prices: [
-      { price: 1257620, link: "https://www.bayut.com/property/details-11971141.html", is_today_listing: false },
-      { price: 1257620, link: "https://www.bayut.com/property/details-11970696.html", is_today_listing: false },
-      { price: 1257620, link: "https://www.bayut.com/property/details-11973581.html", is_today_listing: false }
-    ]
+    topPrice: { price: 1257620, link: "https://www.bayut.com/property/details-11971141.html", is_today_listing: false }
   },
   {
     id: "9",
@@ -241,11 +209,7 @@ export const mockListings: PropertyListing[] = [
     originalTitle: "After Discount 1.88 M Only | Just Steps From Metro Station | 3 Bed + Closed Kitchen All Rooms En-Suit | Very Good Discount Offer | Bayut.com",
     bayutLink: "https://www.bayut.com/property/details-11984329.html",
     buildingUrl: "https://www.bayut.com/for-sale/apartments/dubai/al-furjan/sunbliss-residences/",
-    top3Prices: [
-      { price: 1299000, link: "https://www.bayut.com/property/details-11944147.html", is_today_listing: false },
-      { price: 1342300, link: "https://www.bayut.com/property/details-11881542.html", is_today_listing: false },
-      { price: 1799000, link: "https://www.bayut.com/property/details-11944218.html", is_today_listing: false }
-    ]
+    topPrice: { price: 1299000, link: "https://www.bayut.com/property/details-11944147.html", is_today_listing: false }
   },
   {
     id: "10",
@@ -266,10 +230,6 @@ export const mockListings: PropertyListing[] = [
     originalTitle: "Exquisitely Transformed 4 Bedroom Villa in The Meadows | Rare Extended Layout | Fully Furnished | Smart Home | Luxurious Outdoor Retreat | Bayut.com",
     bayutLink: "https://www.bayut.com/property/details-11984325.html",
     buildingUrl: "https://www.bayut.com/for-sale/villas/dubai/the-meadows/the-meadows-2/",
-    top3Prices: [
-      { price: 11250000, link: "https://www.bayut.com/property/details-11934679.html", is_today_listing: false },
-      { price: 11500000, link: "https://www.bayut.com/property/details-10818661.html", is_today_listing: false },
-      { price: 11500000, link: "https://www.bayut.com/property/details-9077541.html", is_today_listing: false }
-    ]
+    topPrice: { price: 11250000, link: "https://www.bayut.com/property/details-11934679.html", is_today_listing: false }
   }
 ];
