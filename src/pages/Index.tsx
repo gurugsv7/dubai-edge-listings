@@ -6,9 +6,9 @@ import { HeroSection } from "@/components/HeroSection";
 import { Search, Star } from "lucide-react";
 
 const getBedroomOptions = (listings: any[]) => {
-  const set = new Set<string>();
-  listings.forEach((l) => set.add(String(l.bedroom_count)));
-  return Array.from(set).sort((a, b) => Number(a) - Number(b));
+  const set = new Set<number>();
+  listings.forEach((l) => set.add(Number(l.bedroom_count)));
+  return Array.from(set).sort((a, b) => a - b);
 };
 
 function isTodaysBest(listing: any) {
@@ -24,11 +24,26 @@ function normalizeTitle(title: string) {
 
 const Index = () => {
   const navigate = useNavigate();
-  const [search, setSearch] = useState("");
-  const [bedroomFilter, setBedroomFilter] = useState("");
-  const [showOnlyBest, setShowOnlyBest] = useState(false);
+  // Restore state from sessionStorage if available
+  const [search, setSearch] = useState(() => sessionStorage.getItem("search") ?? "");
+  const [bedroomFilter, setBedroomFilter] = useState<string | number>(() => {
+    const val = sessionStorage.getItem("bedroomFilter");
+    return val === null ? "" : isNaN(Number(val)) ? val : Number(val);
+  });
+  const [showOnlyBest, setShowOnlyBest] = useState(() => sessionStorage.getItem("showOnlyBest") === "true");
 
-  const bedroomOptions = getBedroomOptions(mockListings);
+  // Price range state
+  const prices = mockListings.map(l => l.price_number).filter(Boolean);
+  const minListingPrice = Math.min(...prices);
+  const maxListingPrice = Math.max(...prices);
+  const [minPrice, setMinPrice] = useState<number | "">(() => {
+    const val = sessionStorage.getItem("minPrice");
+    return val === null ? "" : Number(val);
+  });
+  const [maxPrice, setMaxPrice] = useState<number | "">(() => {
+    const val = sessionStorage.getItem("maxPrice");
+    return val === null ? "" : Number(val);
+  });
 
   let filteredListings = mockListings.filter((listing) => {
     const searchLower = search.toLowerCase();
@@ -36,9 +51,12 @@ const Index = () => {
       listing.location.toLowerCase().includes(searchLower) ||
       (listing.building_url && listing.building_url.toLowerCase().includes(searchLower));
     const matchesBedroom =
-      !bedroomFilter || String(listing.bedroom_count) === bedroomFilter;
+      bedroomFilter === "" ? true : Number(listing.bedroom_count) === Number(bedroomFilter);
+    const matchesPrice =
+      (minPrice === "" || listing.price_number >= minPrice) &&
+      (maxPrice === "" || listing.price_number <= maxPrice);
     const matchesBest = !showOnlyBest || isTodaysBest(listing);
-    return matchesSearch && matchesBedroom && matchesBest;
+    return matchesSearch && matchesBedroom && matchesPrice && matchesBest;
   });
 
   filteredListings = [
@@ -54,6 +72,15 @@ const Index = () => {
       sessionStorage.removeItem("homeScrollY");
     }
   }, []);
+
+  // Persist state to sessionStorage on change
+  useEffect(() => {
+    sessionStorage.setItem("search", search);
+    sessionStorage.setItem("bedroomFilter", bedroomFilter === undefined ? "" : String(bedroomFilter));
+    sessionStorage.setItem("showOnlyBest", String(showOnlyBest));
+    sessionStorage.setItem("minPrice", minPrice === "" ? "" : String(minPrice));
+    sessionStorage.setItem("maxPrice", maxPrice === "" ? "" : String(maxPrice));
+  }, [search, bedroomFilter, showOnlyBest, minPrice, maxPrice]);
 
   return (
     <div>
@@ -84,15 +111,38 @@ const Index = () => {
           <select
             className="border border-gray-300 rounded-full px-4 py-2 text-base shadow focus:outline-none focus:ring-2 focus:ring-blue-400 transition w-full md:w-auto"
             value={bedroomFilter}
-            onChange={(e) => setBedroomFilter(e.target.value)}
+            onChange={(e) => setBedroomFilter(e.target.value === "" ? "" : Number(e.target.value))}
+            style={{ maxWidth: 200, marginRight: 12 }}
           >
             <option value="">All Bedrooms</option>
-            {bedroomOptions.map((bed) => (
-              <option key={bed} value={bed}>
-                {bed === "0" ? "Studio" : `${bed} Bedroom${bed === "1" ? "" : "s"}`}
-              </option>
-            ))}
+            <option value={0}>Studio</option>
+            <option value={1}>1 Bedroom</option>
+            <option value={2}>2 Bedrooms</option>
+            <option value={3}>3 Bedrooms</option>
+            <option value={4}>4 Bedrooms</option>
           </select>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, marginRight: 12 }}>
+            <input
+              type="number"
+              min={minListingPrice}
+              max={maxListingPrice}
+              placeholder={`Min (${minListingPrice})`}
+              value={minPrice}
+              onChange={e => setMinPrice(e.target.value === "" ? "" : Number(e.target.value))}
+              className="border border-gray-300 rounded-full px-3 py-2 text-base shadow focus:outline-none focus:ring-2 focus:ring-blue-400 transition w-28"
+              style={{ marginRight: 4 }}
+            />
+            <span>-</span>
+            <input
+              type="number"
+              min={minListingPrice}
+              max={maxListingPrice}
+              placeholder={`Max (${maxListingPrice})`}
+              value={maxPrice}
+              onChange={e => setMaxPrice(e.target.value === "" ? "" : Number(e.target.value))}
+              className="border border-gray-300 rounded-full px-3 py-2 text-base shadow focus:outline-none focus:ring-2 focus:ring-blue-400 transition w-28"
+            />
+          </div>
           <label className="flex items-center gap-2 ml-0 md:ml-4 mt-3 md:mt-0 cursor-pointer select-none">
             <input
               type="checkbox"
@@ -137,7 +187,19 @@ const Index = () => {
                   size="sm"
                   variant="outline"
                 >
-                  <a href={listing.link} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={listing.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => {
+                      sessionStorage.setItem("search", search);
+                      sessionStorage.setItem("bedroomFilter", bedroomFilter === undefined ? "" : String(bedroomFilter));
+                      sessionStorage.setItem("showOnlyBest", String(showOnlyBest));
+                      sessionStorage.setItem("minPrice", minPrice === "" ? "" : String(minPrice));
+                      sessionStorage.setItem("maxPrice", maxPrice === "" ? "" : String(maxPrice));
+                      sessionStorage.setItem("homeScrollY", window.scrollY.toString());
+                    }}
+                  >
                     Bayut
                   </a>
                 </Button>
