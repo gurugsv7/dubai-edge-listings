@@ -42,7 +42,7 @@ const Index = () => {
   });
   const [maxPrice, setMaxPrice] = useState<number | "">(() => {
     const val = sessionStorage.getItem("maxPrice");
-    return val === null ? "" : Number(val);
+    return val === null || val === "" ? maxListingPrice : Number(val);
   });
 
   let filteredListings = mockListings.filter((listing) => {
@@ -81,6 +81,18 @@ const Index = () => {
     sessionStorage.setItem("minPrice", minPrice === "" ? "" : String(minPrice));
     sessionStorage.setItem("maxPrice", maxPrice === "" ? "" : String(maxPrice));
   }, [search, bedroomFilter, showOnlyBest, minPrice, maxPrice]);
+
+  // Debug: Log filter state and filtered listings count
+  useEffect(() => {
+    console.log("Filter state:", {
+      search,
+      bedroomFilter,
+      minPrice,
+      maxPrice,
+      showOnlyBest,
+      filteredListingsCount: filteredListings.length,
+    });
+  }, [search, bedroomFilter, minPrice, maxPrice, showOnlyBest, filteredListings.length]);
 
   return (
     <div>
