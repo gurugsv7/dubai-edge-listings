@@ -1,4 +1,4 @@
-export const mockListing = [
+export const mockListings = [
   {
     "title": "Unfurnished | Studio Type | Prime Location | Bayut.com",
     "price": "AED 600,000",
