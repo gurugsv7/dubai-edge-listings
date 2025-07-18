@@ -1,5 +1,671 @@
 export const mockListings = [
   {
+    "title": "SPACIOUS 1 BEDROOM | CHILLER FREE | POOL VIEW | Bayut.com",
+    "price": "AED 620,000",
+    "price_number": 620000,
+    "location": "Dana Tower, JVC District 12, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "746 sqft",
+    "link": "https://www.bayut.com/property/details-12263793.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-12/dana-tower/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 620000,
+      "link": "https://www.bayut.com/property/details-12263793.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
+  },
+  {
+    "title": "2BR Duplex | Vacant | Bright & Spacious | Bayut.com",
+    "price": "AED 2,500,000",
+    "price_number": 2500000,
+    "location": "Belgravia 2, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "2 Bed",
+    "bedroom_count": "2",
+    "size": "1,923 sqft",
+    "link": "https://www.bayut.com/property/details-12264114.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/belgravia-2/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 2500000,
+      "link": "https://www.bayut.com/property/details-12264114.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
+  },
+  {
+    "title": "HIGH FLOOR | UNOBSTRUCTED CITY VIEWS | CORNER UNIT | Bayut.com",
+    "price": "AED 1,200,000",
+    "price_number": 1200000,
+    "location": "Binghatti Onyx, JVC District 15, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "693 sqft",
+    "link": "https://www.bayut.com/property/details-12263684.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-15/binghatti-onyx/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 1149888,
+      "link": "https://www.bayut.com/property/details-10820552.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Stunning 1-Bedroom Unit for Sale in JVC | High ROI | Resort-Style Amenities | Bayut.com",
+    "price": "AED 775,000",
+    "price_number": 775000,
+    "location": "Park Corner, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "783 sqft",
+    "link": "https://www.bayut.com/property/details-11286338.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/park-corner/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 775000,
+      "link": "https://www.bayut.com/property/details-11286338.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
+  },
+  {
+    "title": "High ROI | Investor Deal | Fully Furnished | Bayut.com",
+    "price": "AED 600,000",
+    "price_number": 600000,
+    "location": "FIVE Jumeirah Village, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "",
+    "link": "https://www.bayut.com/property/details-12263938.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/five-jumeirah-village/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 600000,
+      "link": "https://www.bayut.com/property/details-12263938.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
+  },
+  {
+    "title": "Maid Room | Vacant | Low Floor | Corner | Bayut.com",
+    "price": "AED 1,850,000",
+    "price_number": 1850000,
+    "location": "Hyati Residence, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "2 Bed",
+    "bedroom_count": "2",
+    "size": "1,203 sqft",
+    "link": "https://www.bayut.com/property/details-12263548.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/hyati-residence/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 1850000,
+      "link": "https://www.bayut.com/property/details-12263548.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
+  },
+  {
+    "title": "Ready to Move | Park View | Vacant | Low Floor | Bayut.com",
+    "price": "AED 990,000",
+    "price_number": 990000,
+    "location": "Binghatti Gardenia, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "654 sqft",
+    "link": "https://www.bayut.com/property/details-12263546.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-gardenia/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 690000,
+      "link": "https://www.bayut.com/property/details-12204927.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Ready to Move | Higher Floor | Spacious | Bayut.com",
+    "price": "AED 1,299,500",
+    "price_number": 1299500,
+    "location": "West Tower, Luma 22, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "841 sqft",
+    "link": "https://www.bayut.com/property/details-12263552.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/luma-22/west-tower/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 1290000,
+      "link": "https://www.bayut.com/property/details-11746530.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Ready to Move | High Floor | New York Style | Bayut.com",
+    "price": "AED 1,783,090",
+    "price_number": 1783090,
+    "location": "LOCI Residences, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "2,032 sqft",
+    "link": "https://www.bayut.com/property/details-12263550.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/loci-residences/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 730000,
+      "link": "https://www.bayut.com/property/details-12031261.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Miami | Vacant | Ready | High Floor | Bayut.com",
+    "price": "AED 1,307,541",
+    "price_number": 1307541,
+    "location": "LOCI Residences, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "1,245 sqft",
+    "link": "https://www.bayut.com/property/details-12263547.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/loci-residences/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 730000,
+      "link": "https://www.bayut.com/property/details-12031261.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Brand New | Modern Finishing | Bright Unit | Bayut.com",
+    "price": "AED 960,000",
+    "price_number": 960000,
+    "location": "La Residenza, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "625 sqft",
+    "link": "https://www.bayut.com/property/details-12263054.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/la-residenza/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 960000,
+      "link": "https://www.bayut.com/property/details-12263054.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
+  },
+  {
+    "title": "Vacant | Brand New | Study Room | Modern Style | Bayut.com",
+    "price": "AED 1,395,000",
+    "price_number": 1395000,
+    "location": "West Tower, Luma 22, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "838 sqft",
+    "link": "https://www.bayut.com/property/details-12263024.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/luma-22/west-tower/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 1290000,
+      "link": "https://www.bayut.com/property/details-11746530.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Furnished Studio | Vacant | Ready To Move IN | Bayut.com",
+    "price": "AED 750,000",
+    "price_number": 750000,
+    "location": "Binghatti Amber, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "",
+    "link": "https://www.bayut.com/property/details-12262934.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-amber/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 750000,
+      "link": "https://www.bayut.com/property/details-12262934.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
+  },
+  {
+    "title": "Miami Style | Ready to Move | Higher Floor | Bayut.com",
+    "price": "AED 1,759,193",
+    "price_number": 1759193,
+    "location": "LOCI Residences, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "2,005 sqft",
+    "link": "https://www.bayut.com/property/details-12263545.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/loci-residences/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 730000,
+      "link": "https://www.bayut.com/property/details-12031261.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Vacant | Ellington | Fitted Appliances | Bayut.com",
+    "price": "AED 2,000,000",
+    "price_number": 2000000,
+    "location": "Belgravia Square, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "2 Bed",
+    "bedroom_count": "2",
+    "size": "1,101 sqft",
+    "link": "https://www.bayut.com/property/details-12263500.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/belgravia-square/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 2000000,
+      "link": "https://www.bayut.com/property/details-12263500.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
+  },
+  {
+    "title": "Studio Unit | Ideal for End-Users and Investors I Great Condition | Bayut.com",
+    "price": "AED 450,000",
+    "price_number": 450000,
+    "location": "Diamond Views 1 Block A, Diamond Views 1, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "",
+    "link": "https://www.bayut.com/property/details-12262965.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/diamond-views-1/diamond-views-1-block-a/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 450000,
+      "link": "https://www.bayut.com/property/details-12262965.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
+  },
+  {
+    "title": "Brand-New Studio | Fully Furnished | Move-In Ready | Bayut.com",
+    "price": "AED 680,000",
+    "price_number": 680000,
+    "location": "Serenity Lakes 5, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "",
+    "link": "https://www.bayut.com/property/details-12262860.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/serenity-lakes-5/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 570000,
+      "link": "https://www.bayut.com/property/details-11724247.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Elevated Apt Featuring Community View | Vacant | Bayut.com",
+    "price": "AED 1,100,000",
+    "price_number": 1100000,
+    "location": "Binghatti Azure, JVC District 16, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "746 sqft",
+    "link": "https://www.bayut.com/property/details-12262155.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-16/binghatti-azure/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 1049000,
+      "link": "https://www.bayut.com/property/details-12217252.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Stunning 1 BHK-Apartment For Sale I Smart Home System I Hot Deal | Bayut.com",
+    "price": "AED 1,100,000",
+    "price_number": 1100000,
+    "location": "Binghatti Heights, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "681 sqft",
+    "link": "https://www.bayut.com/property/details-12262521.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/binghatti-heights/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 930000,
+      "link": "https://www.bayut.com/property/details-12093411.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Smart Home | Prestigious Living | Ready to Move in | Bayut.com",
+    "price": "AED 665,000",
+    "price_number": 665000,
+    "location": "Binghatti Azure, JVC District 16, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "",
+    "link": "https://www.bayut.com/property/details-12262154.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-16/binghatti-azure/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 665000,
+      "link": "https://www.bayut.com/property/details-12262154.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
+  },
+  {
+    "title": "Largest Layout | Elevated Unit with Pool View | Bayut.com",
+    "price": "AED 700,000",
+    "price_number": 700000,
+    "location": "Binghatti Azure, JVC District 16, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "",
+    "link": "https://www.bayut.com/property/details-12262149.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-16/binghatti-azure/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 700000,
+      "link": "https://www.bayut.com/property/details-12262149.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
+  },
+  {
+    "title": "4BHK Villa+ Maid | Luxury Finishing | Prime Location | Bayut.com",
+    "price": "AED 3,800,000",
+    "price_number": 3800000,
+    "location": "Goldenwoods Villas, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "4 Bed",
+    "bedroom_count": "4",
+    "size": "1,870 sqft",
+    "link": "https://www.bayut.com/property/details-12261985.html",
+    "building_url": "https://www.bayut.com/for-sale/villas/dubai/jumeirah-village-circle-jvc/jvc-district-10/goldenwoods-villas/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 3800000,
+      "link": "https://www.bayut.com/property/details-12261985.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
+  },
+  {
+    "title": "Modern Villa | Prime location | 4BR w/Maids | Bayut.com",
+    "price": "AED 7,000,000",
+    "price_number": 7000000,
+    "location": "Circle Villas, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "4 Bed",
+    "bedroom_count": "4",
+    "size": "5,398 sqft",
+    "link": "https://www.bayut.com/property/details-12262123.html",
+    "building_url": "https://www.bayut.com/for-sale/villas/dubai/jumeirah-village-circle-jvc/circle-villas/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 6200000,
+      "link": "https://www.bayut.com/property/details-12060441.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Vacant | Mid Floor | Serene lifestyle | Bayut.com",
+    "price": "AED 1,000,000",
+    "price_number": 1000000,
+    "location": "Binghatti Venus, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "575 sqft",
+    "link": "https://www.bayut.com/property/details-12262022.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/binghatti-venus/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 935000,
+      "link": "https://www.bayut.com/property/details-11976032.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Brand New | Smart Home | Multi Sport Court | Bayut.com",
+    "price": "AED 1,650,000",
+    "price_number": 1650000,
+    "location": "Aura, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "2 Bed",
+    "bedroom_count": "2",
+    "size": "1,080 sqft",
+    "link": "https://www.bayut.com/property/details-12261777.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/aura/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 1625000,
+      "link": "https://www.bayut.com/property/details-12166410.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Vacant | Brand New | Exclusive | Bayut.com",
+    "price": "AED 1,300,000",
+    "price_number": 1300000,
+    "location": "Binghatti Amber, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "942 sqft",
+    "link": "https://www.bayut.com/property/details-12260983.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-amber/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 750000,
+      "link": "https://www.bayut.com/property/details-12262934.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Spacious | Furnished Villa + Maid Room | Vacant | Bayut.com",
+    "price": "AED 3,400,000",
+    "price_number": 3400000,
+    "location": "Grand Paradise I, Grand Paradise, JVC District 15, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "5 Bed",
+    "bedroom_count": "5",
+    "size": "1,797 sqft",
+    "link": "https://www.bayut.com/property/details-12261298.html",
+    "building_url": "https://www.bayut.com/for-sale/villas/dubai/jumeirah-village-circle-jvc/jvc-district-15/grand-paradise/grand-paradise-i/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 3400000,
+      "link": "https://www.bayut.com/property/details-12261298.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
+  },
+  {
+    "title": "Biggest Layout | Ready to Move | Amenities View | Bayut.com",
+    "price": "AED 1,199,000",
+    "price_number": 1199000,
+    "location": "Binghatti Onyx, JVC District 15, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "627 sqft",
+    "link": "https://www.bayut.com/property/details-12260301.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-15/binghatti-onyx/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 1149888,
+      "link": "https://www.bayut.com/property/details-10820552.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Large Terrace | Vacating | Open View | Bayut.com",
+    "price": "AED 880,000",
+    "price_number": 880000,
+    "location": "Binghatti Gate, JVC District 15, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "1,073 sqft",
+    "link": "https://www.bayut.com/property/details-12261127.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-15/binghatti-gate/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 825000,
+      "link": "https://www.bayut.com/property/details-12165352.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Brand New-Sapacious-Prime Urban Living | Bayut.com",
+    "price": "AED 1,975,000",
+    "price_number": 1975000,
+    "location": "Binghatti House, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "1,110 sqft",
+    "link": "https://www.bayut.com/property/details-12260706.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/binghatti-house/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 880000,
+      "link": "https://www.bayut.com/property/details-9944845.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Vacant | Cozy 1BR with Balcony | Well-Maintained | Bayut.com",
+    "price": "AED 630,000",
+    "price_number": 630000,
+    "location": "Summer 2 Block A, Summer, Seasons Community, JVC District 15, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "587 sqft",
+    "link": "https://www.bayut.com/property/details-12260399.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-15/seasons-community/summer/summer-2-block-a/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 590000,
+      "link": "https://www.bayut.com/property/details-12174831.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Pool Facing Unit with Alexa Smart System | Bayut.com",
+    "price": "AED 930,000",
+    "price_number": 930000,
+    "location": "Binghatti Tulip, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "611 sqft",
+    "link": "https://www.bayut.com/property/details-12261347.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-tulip/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 899999,
+      "link": "https://www.bayut.com/property/details-12134026.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "1 Bedroom | Brand New Fully Furnished | Bayut.com",
+    "price": "AED 1,400,000",
+    "price_number": 1400000,
+    "location": "Binghatti Orchid, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "839 sqft",
+    "link": "https://www.bayut.com/property/details-12261115.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/binghatti-orchid/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 1180000,
+      "link": "https://www.bayut.com/property/details-12176627.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Brand New - Fully Furnished - Prime Location - Best Investment | Bayut.com",
+    "price": "AED 1,200,000",
+    "price_number": 1200000,
+    "location": "Concept 7 Residences, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "701 sqft",
+    "link": "https://www.bayut.com/property/details-12260799.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/concept-7-residences/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 1150000,
+      "link": "https://www.bayut.com/property/details-11849038.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "New Hotel Apartment | High ROI | Fully Furnished | Bayut.com",
+    "price": "AED 950,000",
+    "price_number": 950000,
+    "location": "Avalon Tower, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "",
+    "link": "https://www.bayut.com/property/details-12259811.html",
+    "building_url": "https://www.bayut.com/for-sale/hotel-apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/avalon-tower/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 750000,
+      "link": "https://www.bayut.com/property/details-12150039.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "VACANT ON TRANSFER | SINGLE ROW | PARK BACKING | Bayut.com",
+    "price": "AED 3,790,000",
+    "price_number": 3790000,
+    "location": "Al Maali Villas, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "4 Bed",
+    "bedroom_count": "4",
+    "size": "2,699 sqft",
+    "link": "https://www.bayut.com/property/details-12260249.html",
+    "building_url": "https://www.bayut.com/for-sale/townhouses/dubai/jumeirah-village-circle-jvc/jvc-district-14/al-maali-villas/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 3200000,
+      "link": "https://www.bayut.com/property/details-12238026.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Studio | Prime Location | Well Maintained | Bayut.com",
+    "price": "AED 650,000",
+    "price_number": 650000,
+    "location": "National Bonds Residence, JVC District 15, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "",
+    "link": "https://www.bayut.com/property/details-11361657.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-15/national-bonds-residence/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 550000,
+      "link": "https://www.bayut.com/property/details-11645475.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
     "title": "Fully furnished | Rented | High ROI | Bayut.com",
     "price": "AED 1,500,000",
     "price_number": 1500000,
@@ -18,19 +684,37 @@ export const mockListings = [
     "is_cheapest_in_building": false
   },
   {
-    "title": "Stylish Apartment | Oxford 212 | Smart Living in JVC | Bayut.com",
-    "price": "AED 1,300,000",
-    "price_number": 1300000,
-    "location": "Oxford 212, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
+    "title": "1 Bedroom | Great Layout | JVC Prime Area | Bayut.com",
+    "price": "AED 850,000",
+    "price_number": 850000,
+    "location": "Plaza Residences Block A, Plaza Residences, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
     "beds": "1 Bed",
     "bedroom_count": "1",
-    "size": "598 sqft",
-    "link": "https://www.bayut.com/property/details-12257712.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/oxford-212/",
+    "size": "858 sqft",
+    "link": "https://www.bayut.com/property/details-12168351.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/plaza-residences/plaza-residences-block-a/",
     "outdated": false,
     "top_1_price": {
-      "price": 1300000,
-      "link": "https://www.bayut.com/property/details-12257712.html",
+      "price": 849999,
+      "link": "https://www.bayut.com/property/details-11570604.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Luxurious | Furnished | High ROI | Best Amenities | Bayut.com",
+    "price": "AED 2,250,000",
+    "price_number": 2250000,
+    "location": "Belgravia Square, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "1,616 sqft",
+    "link": "https://www.bayut.com/property/details-12259982.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/belgravia-square/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 2250000,
+      "link": "https://www.bayut.com/property/details-12259982.html",
       "is_today_listing": true
     },
     "is_cheapest_in_building": true
@@ -54,19 +738,55 @@ export const mockListings = [
     "is_cheapest_in_building": false
   },
   {
-    "title": "VACANT | PRIME LOCATION | SPACIOUS 1BR | Bayut.com",
-    "price": "AED 820,000",
-    "price_number": 820000,
-    "location": "Plaza Residences Block A, Plaza Residences, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
+    "title": "Ready for viewing | Best price | Vacant | Bayut.com",
+    "price": "AED 720,000",
+    "price_number": 720000,
+    "location": "Binghatti Azure, JVC District 16, Jumeirah Village Circle (JVC), Dubai",
     "beds": "Studio",
     "bedroom_count": "0",
-    "size": "857 sqft",
-    "link": "https://www.bayut.com/property/details-12256771.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/plaza-residences/plaza-residences-block-a/",
+    "size": "",
+    "link": "https://www.bayut.com/property/details-12258703.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-16/binghatti-azure/",
     "outdated": false,
     "top_1_price": {
-      "price": 495000,
-      "link": "https://www.bayut.com/property/details-11934013.html",
+      "price": 720000,
+      "link": "https://www.bayut.com/property/details-12258703.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
+  },
+  {
+    "title": "Specious Layout | Pet Friendly| High ROI Guarantee | Bayut.com",
+    "price": "AED 570,000",
+    "price_number": 570000,
+    "location": "Botanica, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "",
+    "link": "https://www.bayut.com/property/details-11378525.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/botanica/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 510000,
+      "link": "https://www.bayut.com/property/details-12165209.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "Vacant | Fully Furnished | Well Priced | Spacious | Bayut.com",
+    "price": "AED 660,000",
+    "price_number": 660000,
+    "location": "Park View Tower, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "",
+    "link": "https://www.bayut.com/property/details-12259534.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/park-view-tower/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 630000,
+      "link": "https://www.bayut.com/property/details-10771287.html",
       "is_today_listing": false
     },
     "is_cheapest_in_building": false
@@ -83,26 +803,8 @@ export const mockListings = [
     "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-16/binghatti-azure/",
     "outdated": false,
     "top_1_price": {
-      "price": 730000,
-      "link": "https://www.bayut.com/property/details-12258486.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "Spacious Apartment - Pool View - Prime Location - Ready to Move | Bayut.com",
-    "price": "AED 950,000",
-    "price_number": 950000,
-    "location": "Plaza Residences, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "Studio",
-    "bedroom_count": "0",
-    "size": "978 sqft",
-    "link": "https://www.bayut.com/property/details-12257107.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/plaza-residences/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 495000,
-      "link": "https://www.bayut.com/property/details-11934013.html",
+      "price": 720000,
+      "link": "https://www.bayut.com/property/details-12258703.html",
       "is_today_listing": false
     },
     "is_cheapest_in_building": false
@@ -126,55 +828,37 @@ export const mockListings = [
     "is_cheapest_in_building": true
   },
   {
-    "title": "VACANT | PRIME LOCATION | SPACIOUS | Bayut.com",
-    "price": "AED 850,000",
-    "price_number": 850000,
-    "location": "Plaza Residences Block B, Plaza Residences, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "Studio",
-    "bedroom_count": "0",
-    "size": "885 sqft",
-    "link": "https://www.bayut.com/property/details-12256770.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/plaza-residences/plaza-residences-block-b/",
+    "title": "Stylish Apartment | Oxford 212 | Smart Living in JVC | Bayut.com",
+    "price": "AED 1,300,000",
+    "price_number": 1300000,
+    "location": "Oxford 212, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "598 sqft",
+    "link": "https://www.bayut.com/property/details-12257712.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/oxford-212/",
     "outdated": false,
     "top_1_price": {
-      "price": 540000,
-      "link": "https://www.bayut.com/property/details-11971222.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Ready for viewing | Best price | Vacant | Bayut.com",
-    "price": "AED 720,000",
-    "price_number": 720000,
-    "location": "Binghatti Azure, JVC District 16, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "Studio",
-    "bedroom_count": "0",
-    "size": "",
-    "link": "https://www.bayut.com/property/details-12258703.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-16/binghatti-azure/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 720000,
-      "link": "https://www.bayut.com/property/details-12258703.html",
+      "price": 1300000,
+      "link": "https://www.bayut.com/property/details-12257712.html",
       "is_today_listing": true
     },
     "is_cheapest_in_building": true
   },
   {
-    "title": "Vacant | Fully Furnished | Well Priced | Spacious | Bayut.com",
-    "price": "AED 660,000",
-    "price_number": 660000,
-    "location": "Park View Tower, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
+    "title": "Spacious Apartment - Pool View - Prime Location - Ready to Move | Bayut.com",
+    "price": "AED 950,000",
+    "price_number": 950000,
+    "location": "Plaza Residences, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
     "beds": "Studio",
     "bedroom_count": "0",
-    "size": "",
-    "link": "https://www.bayut.com/property/details-12259534.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/park-view-tower/",
+    "size": "978 sqft",
+    "link": "https://www.bayut.com/property/details-12257107.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/plaza-residences/",
     "outdated": false,
     "top_1_price": {
-      "price": 649999,
-      "link": "https://www.bayut.com/property/details-11261447.html",
+      "price": 495000,
+      "link": "https://www.bayut.com/property/details-11934013.html",
       "is_today_listing": false
     },
     "is_cheapest_in_building": false
@@ -198,19 +882,19 @@ export const mockListings = [
     "is_cheapest_in_building": true
   },
   {
-    "title": "2BR | Exclusive | Furnished | Vacant | Bayut.com",
-    "price": "AED 1,200,000",
-    "price_number": 1200000,
-    "location": "Shamal Waves, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "2 Bed",
-    "bedroom_count": "2",
-    "size": "998 sqft",
-    "link": "https://www.bayut.com/property/details-12255284.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/shamal-waves/",
+    "title": "Stunning Studio | Unfurnished | High Floor | Bayut.com",
+    "price": "AED 700,000",
+    "price_number": 700000,
+    "location": "Binghatti Tulip, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "",
+    "link": "https://www.bayut.com/property/details-12257023.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-tulip/",
     "outdated": false,
     "top_1_price": {
-      "price": 1200000,
-      "link": "https://www.bayut.com/property/details-12255284.html",
+      "price": 700000,
+      "link": "https://www.bayut.com/property/details-12257023.html",
       "is_today_listing": true
     },
     "is_cheapest_in_building": true
@@ -227,44 +911,44 @@ export const mockListings = [
     "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-tulip/",
     "outdated": false,
     "top_1_price": {
-      "price": 850000,
-      "link": "https://www.bayut.com/property/details-11110254.html",
+      "price": 899999,
+      "link": "https://www.bayut.com/property/details-12134026.html",
       "is_today_listing": false
     },
     "is_cheapest_in_building": false
   },
   {
-    "title": "Spacious, Fully Furnished One-Bedroom Apartment in Plaza Residences, JVC | Bayut.com",
-    "price": "AED 750,000",
-    "price_number": 750000,
-    "location": "Plaza Residences Block B, Plaza Residences, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
+    "title": "Brand New | Vacant | High Floor | High End | Bayut.com",
+    "price": "AED 960,000",
+    "price_number": 960000,
+    "location": "Binghatti Gardenia, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
     "beds": "1 Bed",
     "bedroom_count": "1",
-    "size": "630 sqft",
-    "link": "https://www.bayut.com/property/details-12256130.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/plaza-residences/plaza-residences-block-b/",
+    "size": "526 sqft",
+    "link": "https://www.bayut.com/property/details-12256351.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-gardenia/",
     "outdated": false,
     "top_1_price": {
-      "price": 750000,
-      "link": "https://www.bayut.com/property/details-12256130.html",
-      "is_today_listing": true
+      "price": 950000,
+      "link": "https://www.bayut.com/property/details-12252913.html",
+      "is_today_listing": false
     },
-    "is_cheapest_in_building": true
+    "is_cheapest_in_building": false
   },
   {
-    "title": "Premium Quality | Spacious Layout | Book Now | Bayut.com",
-    "price": "AED 1,300,000",
-    "price_number": 1300000,
-    "location": "Catch Residences, JVC District 12, Jumeirah Village Circle (JVC), Dubai",
+    "title": "Brand-New 1BR in JVC | Fully Furnished | Bayut.com",
+    "price": "AED 1,175,000",
+    "price_number": 1175000,
+    "location": "Binghatti Amber, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
     "beds": "1 Bed",
     "bedroom_count": "1",
-    "size": "902 sqft",
-    "link": "https://www.bayut.com/property/details-11304551.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-12/catch-residences/",
+    "size": "670 sqft",
+    "link": "https://www.bayut.com/property/details-12256003.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-amber/",
     "outdated": false,
     "top_1_price": {
-      "price": 925000,
-      "link": "https://www.bayut.com/property/details-12071618.html",
+      "price": 1100000,
+      "link": "https://www.bayut.com/property/details-12148349.html",
       "is_today_listing": false
     },
     "is_cheapest_in_building": false
@@ -288,58 +972,76 @@ export const mockListings = [
     "is_cheapest_in_building": true
   },
   {
-    "title": "Brand New | Vacant | High Floor | High End | Bayut.com",
-    "price": "AED 960,000",
-    "price_number": 960000,
-    "location": "Binghatti Gardenia, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
+    "title": "Premium Quality | Spacious Layout | Book Now | Bayut.com",
+    "price": "AED 1,300,000",
+    "price_number": 1300000,
+    "location": "Catch Residences, JVC District 12, Jumeirah Village Circle (JVC), Dubai",
     "beds": "1 Bed",
     "bedroom_count": "1",
-    "size": "526 sqft",
-    "link": "https://www.bayut.com/property/details-12256351.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-gardenia/",
+    "size": "902 sqft",
+    "link": "https://www.bayut.com/property/details-11304551.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-12/catch-residences/",
     "outdated": false,
     "top_1_price": {
       "price": 950000,
-      "link": "https://www.bayut.com/property/details-12252913.html",
+      "link": "https://www.bayut.com/property/details-11489344.html",
       "is_today_listing": false
     },
     "is_cheapest_in_building": false
   },
   {
-    "title": "Elegantly Furnished |Spacious Unit |Prime Location | Bayut.com",
-    "price": "AED 1,600,000",
-    "price_number": 1600000,
-    "location": "Belgravia 3, JVC District 15, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "834 sqft",
-    "link": "https://www.bayut.com/property/details-12255443.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-15/belgravia-3/",
+    "title": "VACANT | PRIME LOCATION | SPACIOUS 1BR | Bayut.com",
+    "price": "AED 820,000",
+    "price_number": 820000,
+    "location": "Plaza Residences Block A, Plaza Residences, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "857 sqft",
+    "link": "https://www.bayut.com/property/details-12256771.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/plaza-residences/plaza-residences-block-a/",
     "outdated": false,
     "top_1_price": {
-      "price": 1300000,
-      "link": "https://www.bayut.com/property/details-11621280.html",
+      "price": 480000,
+      "link": "https://www.bayut.com/property/details-10706508.html",
       "is_today_listing": false
     },
     "is_cheapest_in_building": false
   },
   {
-    "title": "Brand-New 1BR in JVC | Fully Furnished | Bayut.com",
-    "price": "AED 1,175,000",
-    "price_number": 1175000,
-    "location": "Binghatti Amber, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "670 sqft",
-    "link": "https://www.bayut.com/property/details-12256003.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-amber/",
+    "title": "VACANT | PRIME LOCATION | SPACIOUS | Bayut.com",
+    "price": "AED 850,000",
+    "price_number": 850000,
+    "location": "Plaza Residences Block B, Plaza Residences, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "Studio",
+    "bedroom_count": "0",
+    "size": "885 sqft",
+    "link": "https://www.bayut.com/property/details-12256770.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/plaza-residences/plaza-residences-block-b/",
     "outdated": false,
     "top_1_price": {
-      "price": 925000,
-      "link": "https://www.bayut.com/property/details-12253202.html",
+      "price": 800000,
+      "link": "https://www.bayut.com/property/details-12000196.html",
       "is_today_listing": false
     },
     "is_cheapest_in_building": false
+  },
+  {
+    "title": "Spacious, Fully Furnished One-Bedroom Apartment in Plaza Residences, JVC | Bayut.com",
+    "price": "AED 750,000",
+    "price_number": 750000,
+    "location": "Plaza Residences Block B, Plaza Residences, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "630 sqft",
+    "link": "https://www.bayut.com/property/details-12256130.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/plaza-residences/plaza-residences-block-b/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 750000,
+      "link": "https://www.bayut.com/property/details-12256130.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
   },
   {
     "title": "RENTED | HIGH ROI | PRIME LOCATION | Bayut.com",
@@ -360,19 +1062,55 @@ export const mockListings = [
     "is_cheapest_in_building": false
   },
   {
-    "title": "NEGOTIABLE HIGH FLOOR 2BHK with PRIVATE POOL II HIGH ROI II SMART HOME | Bayut.com",
-    "price": "AED 2,100,000",
-    "price_number": 2100000,
-    "location": "Binghatti Amber, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
+    "title": "2BR | Exclusive | Furnished | Vacant | Bayut.com",
+    "price": "AED 1,200,000",
+    "price_number": 1200000,
+    "location": "Shamal Waves, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
     "beds": "2 Bed",
     "bedroom_count": "2",
-    "size": "1,719 sqft",
-    "link": "https://www.bayut.com/property/details-9893302.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-amber/",
+    "size": "998 sqft",
+    "link": "https://www.bayut.com/property/details-12255284.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/shamal-waves/",
     "outdated": false,
     "top_1_price": {
-      "price": 1625000,
-      "link": "https://www.bayut.com/property/details-12195377.html",
+      "price": 1200000,
+      "link": "https://www.bayut.com/property/details-12255284.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
+  },
+  {
+    "title": "Exclusive One Bedroom | Unfurnished |Spacious | Bayut.com",
+    "price": "AED 600,000",
+    "price_number": 600000,
+    "location": "Rose 1, Emirates Gardens, JVC District 12, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "2 Bed",
+    "bedroom_count": "2",
+    "size": "869 sqft",
+    "link": "https://www.bayut.com/property/details-12254467.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-12/emirates-gardens/rose-1/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 600000,
+      "link": "https://www.bayut.com/property/details-12254467.html",
+      "is_today_listing": true
+    },
+    "is_cheapest_in_building": true
+  },
+  {
+    "title": "Pool View 1BR Duplex | Top Floor | Bright Layout | Book Now | Bayut.com",
+    "price": "AED 1,550,000",
+    "price_number": 1550000,
+    "location": "The Autograph, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "793 sqft",
+    "link": "https://www.bayut.com/property/details-11108618.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/the-autograph/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 1420000,
+      "link": "https://www.bayut.com/property/details-12059826.html",
       "is_today_listing": false
     },
     "is_cheapest_in_building": false
@@ -396,6 +1134,24 @@ export const mockListings = [
     "is_cheapest_in_building": true
   },
   {
+    "title": "NEGOTIABLE HIGH FLOOR 2BHK with PRIVATE POOL II HIGH ROI II SMART HOME | Bayut.com",
+    "price": "AED 2,100,000",
+    "price_number": 2100000,
+    "location": "Binghatti Amber, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "2 Bed",
+    "bedroom_count": "2",
+    "size": "1,719 sqft",
+    "link": "https://www.bayut.com/property/details-9893302.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-amber/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 1625000,
+      "link": "https://www.bayut.com/property/details-12195377.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
     "title": "1BR SALE | GOOD DEAL | MARINA VIEW | FOURTH FLOOR | Bayut.com",
     "price": "AED 935,000",
     "price_number": 935000,
@@ -407,116 +1163,44 @@ export const mockListings = [
     "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/binghatti-corner/",
     "outdated": false,
     "top_1_price": {
-      "price": 935000,
-      "link": "https://www.bayut.com/property/details-12255003.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "Pool View 1BR Duplex | Top Floor | Bright Layout | Book Now | Bayut.com",
-    "price": "AED 1,550,000",
-    "price_number": 1550000,
-    "location": "The Autograph, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "793 sqft",
-    "link": "https://www.bayut.com/property/details-11108618.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/the-autograph/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 1400000,
-      "link": "https://www.bayut.com/property/details-11885456.html",
+      "price": 930000,
+      "link": "https://www.bayut.com/property/details-12112584.html",
       "is_today_listing": false
     },
     "is_cheapest_in_building": false
   },
   {
-    "title": "Exclusive One Bedroom | Unfurnished |Spacious | Bayut.com",
-    "price": "AED 600,000",
-    "price_number": 600000,
-    "location": "Rose 1, Emirates Gardens, JVC District 12, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "2 Bed",
-    "bedroom_count": "2",
-    "size": "869 sqft",
-    "link": "https://www.bayut.com/property/details-12254467.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-12/emirates-gardens/rose-1/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 600000,
-      "link": "https://www.bayut.com/property/details-12254467.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "Vacant | 0 Commission | Renovated Unit | Spacious | Bayut.com",
-    "price": "AED 3,118,185",
-    "price_number": 3118185,
-    "location": "Orchid Park, JVC District 15, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "4 Bed",
-    "bedroom_count": "4",
-    "size": "2,588 sqft",
-    "link": "https://www.bayut.com/property/details-12253934.html",
-    "building_url": "https://www.bayut.com/for-sale/townhouses/dubai/jumeirah-village-circle-jvc/jvc-district-15/orchid-park/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 3118185,
-      "link": "https://www.bayut.com/property/details-12253934.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "Community View | Prime Location | Spacious Unit | Bayut.com",
-    "price": "AED 856,800",
-    "price_number": 856800,
-    "location": "Sydney Tower, JVC District 18, Jumeirah Village Circle (JVC), Dubai",
+    "title": "1Bed+ Study | Sale price 850k | Only 10% Downpayment for Mortagage | Limited time offer | Bayut.com",
+    "price": "AED 950,000",
+    "price_number": 950000,
+    "location": "Laya Mansion, JVC District 15, Jumeirah Village Circle (JVC), Dubai",
     "beds": "1 Bed",
     "bedroom_count": "1",
-    "size": "712 sqft",
-    "link": "https://www.bayut.com/property/details-12254345.html",
+    "size": "820 sqft",
+    "link": "https://www.bayut.com/property/details-12254491.html",
+    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-15/laya-mansion/",
+    "outdated": false,
+    "top_1_price": {
+      "price": 800000,
+      "link": "https://www.bayut.com/property/details-12155374.html",
+      "is_today_listing": false
+    },
+    "is_cheapest_in_building": false
+  },
+  {
+    "title": "2 bhk Apartment | with best ammenities | Road view | Bayut.com",
+    "price": "AED 1,312,500",
+    "price_number": 1312500,
+    "location": "Sydney Tower, JVC District 18, Jumeirah Village Circle (JVC), Dubai",
+    "beds": "2 Bed",
+    "bedroom_count": "2",
+    "size": "1,117 sqft",
+    "link": "https://www.bayut.com/property/details-12254731.html",
     "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-18/sydney-tower/",
     "outdated": false,
     "top_1_price": {
-      "price": 856800,
-      "link": "https://www.bayut.com/property/details-12254345.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "Prime Location | Brand New | Modern Villa | Vacant | Bayut.com",
-    "price": "AED 3,150,000",
-    "price_number": 3150000,
-    "location": "Lilac Park, JVC District 12, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "4 Bed",
-    "bedroom_count": "4",
-    "size": "3,020 sqft",
-    "link": "https://www.bayut.com/property/details-12253673.html",
-    "building_url": "https://www.bayut.com/for-sale/villas/dubai/jumeirah-village-circle-jvc/jvc-district-12/lilac-park/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 3140000,
-      "link": "https://www.bayut.com/property/details-12124868.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Furnished | Hotel Room | Investors Only | Bayut.com",
-    "price": "AED 530,000",
-    "price_number": 530000,
-    "location": "FIVE Jumeirah Village, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "Studio",
-    "bedroom_count": "0",
-    "size": "",
-    "link": "https://www.bayut.com/property/details-12254372.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/five-jumeirah-village/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 500000,
-      "link": "https://www.bayut.com/property/details-12158538.html",
+      "price": 1210000,
+      "link": "https://www.bayut.com/property/details-11604841.html",
       "is_today_listing": false
     },
     "is_cheapest_in_building": false
@@ -540,721 +1224,37 @@ export const mockListings = [
     "is_cheapest_in_building": false
   },
   {
-    "title": "2 bhk Apartment | with best ammenities | Road view | Bayut.com",
-    "price": "AED 1,312,500",
-    "price_number": 1312500,
+    "title": "Community View | Prime Location | Spacious Unit | Bayut.com",
+    "price": "AED 856,800",
+    "price_number": 856800,
     "location": "Sydney Tower, JVC District 18, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "2 Bed",
-    "bedroom_count": "2",
-    "size": "1,117 sqft",
-    "link": "https://www.bayut.com/property/details-12254731.html",
+    "beds": "1 Bed",
+    "bedroom_count": "1",
+    "size": "712 sqft",
+    "link": "https://www.bayut.com/property/details-12254345.html",
     "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-18/sydney-tower/",
     "outdated": false,
     "top_1_price": {
-      "price": 1250000,
-      "link": "https://www.bayut.com/property/details-11211111.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "1BHK Vacant / ready to move | Bayut.com",
-    "price": "AED 1,100,000",
-    "price_number": 1100000,
-    "location": "Binghatti Onyx, JVC District 15, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "736 sqft",
-    "link": "https://www.bayut.com/property/details-12253678.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-15/binghatti-onyx/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 1050000,
-      "link": "https://www.bayut.com/property/details-12077073.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "1Bed+ Study | Sale price 850k | Only 10% Downpayment for Mortagage | Limited time offer | Bayut.com",
-    "price": "AED 950,000",
-    "price_number": 950000,
-    "location": "Laya Mansion, JVC District 15, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "820 sqft",
-    "link": "https://www.bayut.com/property/details-12254491.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-15/laya-mansion/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 800000,
-      "link": "https://www.bayut.com/property/details-12093327.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Modern 1 BR| Fully Furnished |Prime Location | Bayut.com",
-    "price": "AED 750,000",
-    "price_number": 750000,
-    "location": "May Residence Tower 2, May Residence, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "Studio",
-    "bedroom_count": "0",
-    "size": "844 sqft",
-    "link": "https://www.bayut.com/property/details-12253864.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/may-residence/may-residence-tower-2/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 465000,
-      "link": "https://www.bayut.com/property/details-11737880.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "FULLY FURNISHED | GARUENTED HIGH ROI | BEST DEAL | Bayut.com",
-    "price": "AED 900,000",
-    "price_number": 900000,
-    "location": "Avalon Tower, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "Studio",
-    "bedroom_count": "0",
-    "size": "",
-    "link": "https://www.bayut.com/property/details-12253140.html",
-    "building_url": "https://www.bayut.com/for-sale/hotel-apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/avalon-tower/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 750000,
-      "link": "https://www.bayut.com/property/details-12169421.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Vacant | One Bedroom | Great Quality | Bayut.com",
-    "price": "AED 925,000",
-    "price_number": 925000,
-    "location": "Binghatti Amber, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "653 sqft",
-    "link": "https://www.bayut.com/property/details-12253202.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-amber/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 925000,
-      "link": "https://www.bayut.com/property/details-12253202.html",
+      "price": 856800,
+      "link": "https://www.bayut.com/property/details-12254345.html",
       "is_today_listing": true
     },
     "is_cheapest_in_building": true
   },
   {
-    "title": "Dubai Skyline view | High Floor | Equipped Kitchen | Bayut.com",
-    "price": "AED 950,000",
-    "price_number": 950000,
-    "location": "Binghatti Gardenia, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "526 sqft",
-    "link": "https://www.bayut.com/property/details-12252913.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-gardenia/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 950000,
-      "link": "https://www.bayut.com/property/details-12252913.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "PHPP till April 2029 | With Appliances | Brand New | Bayut.com",
-    "price": "AED 620,000",
-    "price_number": 620000,
-    "location": "Pantheon Elysee III, JVC District 15, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "Studio",
-    "bedroom_count": "0",
-    "size": "",
-    "link": "https://www.bayut.com/property/details-12252626.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-15/pantheon-elysee-iii/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 620000,
-      "link": "https://www.bayut.com/property/details-12252626.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "Furnished | High ROI | Vacant on Transfer | Bayut.com",
-    "price": "AED 800,000",
-    "price_number": 800000,
-    "location": "Dezire Residences, JVC District 17, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "843 sqft",
-    "link": "https://www.bayut.com/property/details-8363296.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-17/dezire-residences/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 800000,
-      "link": "https://www.bayut.com/property/details-8363296.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "High Floor | Brand New | Vacant | Bayut.com",
-    "price": "AED 1,000,000",
-    "price_number": 1000000,
-    "location": "Binghatti Gardenia, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "524 sqft",
-    "link": "https://www.bayut.com/property/details-12252815.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-gardenia/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 950000,
-      "link": "https://www.bayut.com/property/details-12252913.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Ready to Move-in | Community View | Furnished Studio | Bayut.com",
-    "price": "AED 850,000",
-    "price_number": 850000,
-    "location": "Oxford Terraces, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "Studio",
-    "bedroom_count": "0",
-    "size": "",
-    "link": "https://www.bayut.com/property/details-12252132.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/oxford-terraces/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 850000,
-      "link": "https://www.bayut.com/property/details-12252132.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "Stylish 2BR + Maid | Catch Residences by IGO | Prime JVC Location | Bayut.com",
-    "price": "AED 2,150,000",
-    "price_number": 2150000,
-    "location": "Catch Residences, JVC District 12, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "2 Bed",
-    "bedroom_count": "2",
-    "size": "1,547 sqft",
-    "link": "https://www.bayut.com/property/details-12252523.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-12/catch-residences/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 2150000,
-      "link": "https://www.bayut.com/property/details-12252523.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "Fully Furnished | VOT | Private Pool | Bayut.com",
-    "price": "AED 2,100,000",
-    "price_number": 2100000,
-    "location": "Binghatti Onyx, JVC District 15, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "2 Bed",
-    "bedroom_count": "2",
-    "size": "1,655 sqft",
-    "link": "https://www.bayut.com/property/details-12252112.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-15/binghatti-onyx/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 2100000,
-      "link": "https://www.bayut.com/property/details-12252112.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "1BR SALE | HUGE BALCONY | FURNISHED | GOOD ROI | Bayut.com",
-    "price": "AED 870,000",
-    "price_number": 870000,
-    "location": "Roxana Residence A, Roxana Residences, JVC District 12, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "847 sqft",
-    "link": "https://www.bayut.com/property/details-12252104.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-12/roxana-residences/roxana-residence-a/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 870000,
-      "link": "https://www.bayut.com/property/details-12252104.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "1BR SALE | UNFURNISHED | DISTRESS DEAL | GOOD ROI | Bayut.com",
-    "price": "AED 820,000",
-    "price_number": 820000,
-    "location": "Binghatti Gems, JVC District 12, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "662 sqft",
-    "link": "https://www.bayut.com/property/details-12252100.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-12/binghatti-gems/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 820000,
-      "link": "https://www.bayut.com/property/details-12252100.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "High floor | New | Beautiful Skyline view | Bayut.com",
-    "price": "AED 1,130,000",
-    "price_number": 1130000,
-    "location": "Binghatti Corner, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "686 sqft",
-    "link": "https://www.bayut.com/property/details-12251318.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/binghatti-corner/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 980000,
-      "link": "https://www.bayut.com/property/details-12218291.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Below Market Price | Brand New 1BR | Vacant | High Floor | Bayut.com",
-    "price": "AED 899,000",
-    "price_number": 899000,
-    "location": "Binghatti House, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "524 sqft",
-    "link": "https://www.bayut.com/property/details-12251212.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/binghatti-house/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 880000,
-      "link": "https://www.bayut.com/property/details-9944845.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Fully Furnished | Highly Maintained | Premium Quality | Spacious | Vibrant Living | Bayut.com",
-    "price": "AED 1,000,000",
-    "price_number": 1000000,
-    "location": "Lucky 1 Residences, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "2 Bed",
-    "bedroom_count": "2",
-    "size": "765 sqft",
-    "link": "https://www.bayut.com/property/details-12251120.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/lucky-1-residences/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 1000000,
-      "link": "https://www.bayut.com/property/details-12251120.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "Cozy Elegant | Fully Furnished | Ready To Move | Bayut.com",
-    "price": "AED 640,000",
-    "price_number": 640000,
-    "location": "Shamal Waves, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "Studio",
-    "bedroom_count": "0",
-    "size": "",
-    "link": "https://www.bayut.com/property/details-12250277.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/shamal-waves/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 630000,
-      "link": "https://www.bayut.com/property/details-12161349.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Luxurious 4 BR+M | Private Pool | Motivated Seller | Bayut.com",
-    "price": "AED 3,325,000",
-    "price_number": 3325000,
-    "location": "Al Maali Villas, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
+    "title": "Vacant | 0 Commission | Renovated Unit | Spacious | Bayut.com",
+    "price": "AED 3,118,185",
+    "price_number": 3118185,
+    "location": "Orchid Park, JVC District 15, Jumeirah Village Circle (JVC), Dubai",
     "beds": "4 Bed",
     "bedroom_count": "4",
-    "size": "2,699 sqft",
-    "link": "https://www.bayut.com/property/details-12250646.html",
-    "building_url": "https://www.bayut.com/for-sale/villas/dubai/jumeirah-village-circle-jvc/jvc-district-14/al-maali-villas/",
+    "size": "2,588 sqft",
+    "link": "https://www.bayut.com/property/details-12253934.html",
+    "building_url": "https://www.bayut.com/for-sale/townhouses/dubai/jumeirah-village-circle-jvc/jvc-district-15/orchid-park/",
     "outdated": false,
     "top_1_price": {
-      "price": 3325000,
-      "link": "https://www.bayut.com/property/details-12250646.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "Studio Converted to 1BR | Vacant | Fully Furnished | Bayut.com",
-    "price": "AED 600,000",
-    "price_number": 600000,
-    "location": "Magnolia 2, Emirates Gardens 2, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "Studio",
-    "bedroom_count": "0",
-    "size": "",
-    "link": "https://www.bayut.com/property/details-12250244.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/emirates-gardens-2/magnolia-2/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 600000,
-      "link": "https://www.bayut.com/property/details-12250244.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "1 BR + Maid\u2019s | High Floor | Perfect Investment | Bayut.com",
-    "price": "AED 929,999",
-    "price_number": 929999,
-    "location": "Lucky 1 Residences, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "749 sqft",
-    "link": "https://www.bayut.com/property/details-12250031.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/lucky-1-residences/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 929999,
-      "link": "https://www.bayut.com/property/details-12250031.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "Pool and Amenities View | Study Room | Rented 105k | Kitchen Appliances | Spacious | Highly Maintained | Bayut.com",
-    "price": "AED 1,500,000",
-    "price_number": 1500000,
-    "location": "Lucky 1 Residences, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "2 Bed",
-    "bedroom_count": "2",
-    "size": "1,142 sqft",
-    "link": "https://www.bayut.com/property/details-12250785.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/lucky-1-residences/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 1450000,
-      "link": "https://www.bayut.com/property/details-11718587.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Great Investment | Upgraded | One Bedroom | Bayut.com",
-    "price": "AED 749,000",
-    "price_number": 749000,
-    "location": "Summer, Seasons Community, JVC District 15, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "603 sqft",
-    "link": "https://www.bayut.com/property/details-12251000.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-15/seasons-community/summer/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 585000,
-      "link": "https://www.bayut.com/property/details-11957085.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Fully Furnished | Exclusive | Large Layout | Bayut.com",
-    "price": "AED 1,350,000",
-    "price_number": 1350000,
-    "location": "Belgravia 2, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "789 sqft",
-    "link": "https://www.bayut.com/property/details-12250419.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/belgravia-2/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 1280000,
-      "link": "https://www.bayut.com/property/details-12118891.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Elegant 1-BR | Modern Design | Prime Location | Bayut.com",
-    "price": "AED 1,400,000",
-    "price_number": 1400000,
-    "location": "Belgravia Square, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "775 sqft",
-    "link": "https://www.bayut.com/property/details-12223230.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/belgravia-square/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 1400000,
-      "link": "https://www.bayut.com/property/details-12223230.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "STUDIO I UNFURNISHED I JVC | Bayut.com",
-    "price": "AED 900,000",
-    "price_number": 900000,
-    "location": "Mayas Geneva, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "Studio",
-    "bedroom_count": "0",
-    "size": "",
-    "link": "https://www.bayut.com/property/details-12251010.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/mayas-geneva/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 650000,
-      "link": "https://www.bayut.com/property/details-11745583.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Perfect for investment: Elegant 1-Bedroom | mid-floor - Rented | Bayut.com",
-    "price": "AED 1,300,000",
-    "price_number": 1300000,
-    "location": "Binghatti Orchid, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "806 sqft",
-    "link": "https://www.bayut.com/property/details-11203159.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/binghatti-orchid/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 1200000,
-      "link": "https://www.bayut.com/property/details-10631500.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Fully furnished| Open view| Well-maintained| High ROI | Bayut.com",
-    "price": "AED 1,400,000",
-    "price_number": 1400000,
-    "location": "Belgravia Square, JVC District 14, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "745 sqft",
-    "link": "https://www.bayut.com/property/details-12249980.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-14/belgravia-square/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 1400000,
-      "link": "https://www.bayut.com/property/details-12249980.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "Spacious 2-BR Great Investment Opportunity | Bayut.com",
-    "price": "AED 2,200,000",
-    "price_number": 2200000,
-    "location": "Zaya Hameni, JVC District 15, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "2 Bed",
-    "bedroom_count": "2",
-    "size": "1,405 sqft",
-    "link": "https://www.bayut.com/property/details-12249284.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-15/zaya-hameni/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 1950000,
-      "link": "https://www.bayut.com/property/details-12076830.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Invest Deal | Furnished | Spacious Layout | Bayut.com",
-    "price": "AED 1,200,000",
-    "price_number": 1200000,
-    "location": "Dar Al Jawhara Residence, JVC District 13, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "798 sqft",
-    "link": "https://www.bayut.com/property/details-12247696.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-13/dar-al-jawhara-residence/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 1100000,
-      "link": "https://www.bayut.com/property/details-12148349.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Fully furnished | High Floor | Genuine Resale | Bayut.com",
-    "price": "AED 1,100,000",
-    "price_number": 1100000,
-    "location": "La Riviera Azure, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "982 sqft",
-    "link": "https://www.bayut.com/property/details-11347911.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/la-riviera-azure/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 1100000,
-      "link": "https://www.bayut.com/property/details-11347911.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "MODERN KITCHEN | POOL VIEW | PRIME LOCATION | Bayut.com",
-    "price": "AED 1,100,000",
-    "price_number": 1100000,
-    "location": "Binghatti Lavender, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "685 sqft",
-    "link": "https://www.bayut.com/property/details-12249002.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/binghatti-lavender/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 1100000,
-      "link": "https://www.bayut.com/property/details-12249002.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "The Lowest 1bed | 1 Year Old | Rented | Pool View | Great quality | Quick transfer only | Bayut.com",
-    "price": "AED 1,000,000",
-    "price_number": 1000000,
-    "location": "Binghatti Crescent, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "740 sqft",
-    "link": "https://www.bayut.com/property/details-12248441.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-crescent/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 1000000,
-      "link": "https://www.bayut.com/property/details-12248441.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "MASSIVE 1 BED | SPACIOUS BALCONY | GREAT LOCATION | Bayut.com",
-    "price": "AED 1,150,000",
-    "price_number": 1150000,
-    "location": "Bluebell  Residence, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "1,002 sqft",
-    "link": "https://www.bayut.com/property/details-12249093.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/bluebell-residence/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 940000,
-      "link": "https://www.bayut.com/property/details-11499962.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Garden area | Vacant on Transfer | Upgraded Kitch | Bayut.com",
-    "price": "AED 2,650,000",
-    "price_number": 2650000,
-    "location": "Westar La Residencia del Sol, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "3 Bed",
-    "bedroom_count": "3",
-    "size": "3,515 sqft",
-    "link": "https://www.bayut.com/property/details-12247416.html",
-    "building_url": "https://www.bayut.com/for-sale/villas/dubai/jumeirah-village-circle-jvc/jvc-district-10/westar-la-residencia-del-sol/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 2650000,
-      "link": "https://www.bayut.com/property/details-12247416.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "Spacious 1 bHK | Brand New | Great Investment | Bayut.com",
-    "price": "AED 959,000",
-    "price_number": 959000,
-    "location": "Binghatti Amber, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "694 sqft",
-    "link": "https://www.bayut.com/property/details-12247440.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/binghatti-amber/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 925000,
-      "link": "https://www.bayut.com/property/details-12253202.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "Pool View | Fully Luxury Furnished | UltraLuxury | Bayut.com",
-    "price": "AED 1,500,000",
-    "price_number": 1500000,
-    "location": "Oxford Terraces 2, JVC District 11, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "756 sqft",
-    "link": "https://www.bayut.com/property/details-12247361.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-11/oxford-terraces-2/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 1500000,
-      "link": "https://www.bayut.com/property/details-12247361.html",
-      "is_today_listing": true
-    },
-    "is_cheapest_in_building": true
-  },
-  {
-    "title": "Luxury Living | Furnished Studio | Pool View | Bayut.com",
-    "price": "AED 760,000",
-    "price_number": 760000,
-    "location": "Signature Livings North, Signature Livings, JVC District 10, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "Studio",
-    "bedroom_count": "0",
-    "size": "",
-    "link": "https://www.bayut.com/property/details-12246832.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-10/signature-livings/signature-livings-north/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 750000,
-      "link": "https://www.bayut.com/property/details-11192021.html",
-      "is_today_listing": false
-    },
-    "is_cheapest_in_building": false
-  },
-  {
-    "title": "HIGH ROI || PREMIUM FURNISHING || LUXURY LIVING | Bayut.com",
-    "price": "AED 1,200,000",
-    "price_number": 1200000,
-    "location": "Nicholas Residence, JVC District 12, Jumeirah Village Circle (JVC), Dubai",
-    "beds": "1 Bed",
-    "bedroom_count": "1",
-    "size": "816 sqft",
-    "link": "https://www.bayut.com/property/details-12247183.html",
-    "building_url": "https://www.bayut.com/for-sale/apartments/dubai/jumeirah-village-circle-jvc/jvc-district-12/nicholas-residence/",
-    "outdated": false,
-    "top_1_price": {
-      "price": 1200000,
-      "link": "https://www.bayut.com/property/details-12247183.html",
+      "price": 3118185,
+      "link": "https://www.bayut.com/property/details-12253934.html",
       "is_today_listing": true
     },
     "is_cheapest_in_building": true
